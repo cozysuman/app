@@ -72,7 +72,7 @@ getWeatherIcon(icon,id){
 
 
 
-    const apiCall = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}`)
+    const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}`)
     const response = await apiCall.json();
     console.log(response);
     this.setState(
